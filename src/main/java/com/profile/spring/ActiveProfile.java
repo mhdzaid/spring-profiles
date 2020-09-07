@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class ActiveProfile {
 
-    @Value("${spring.profiles}")
+    @Value("${application.current-profile}")
     private String profile;
 
     @EventListener(ContextRefreshedEvent.class)
     public void onStartUp() {
-        System.out.println("Profile is : " +  profile);
+        System.out.println("The current profile is : " +  profile);
     }
 }
