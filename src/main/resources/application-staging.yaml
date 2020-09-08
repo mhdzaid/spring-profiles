@@ -1,6 +1,6 @@
 spring:
   profiles: staging
 server:
-  port: 8093
+  port: 8094
 application:
   current-profile: staging
